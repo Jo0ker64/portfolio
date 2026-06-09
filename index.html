@@ -5,45 +5,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Jonathan Auroux Martel | Joeker Portfolio</title>
-  <meta name="description"
-    content="Portfolio de Jonathan Auroux Martel — développeur, systèmes, réseaux et cybersécurité. Ancien technicien télécom devenu profil hybride." />
-  <meta name="theme-color" content="#39ff14" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Primary Meta -->
+    <title>Jonathan Auroux Martel | Joeker Portfolio</title>
 
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            jokerGreen: '#39ff14',
-            jokerPurple: '#7c1cff',
-            jokerViolet: '#a855f7',
-            deepBlack: '#09090b',
-            softBlack: '#151515',
-            anthracite: '#2d2d2d',
-            bone: '#f8fafc',
-            muted: '#94a3b8'
-          },
-          fontFamily: {
-            dys: ['OpenDyslexic', 'Inter', 'system-ui', 'sans-serif'],
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            mono: ['JetBrains Mono', 'Consolas', 'monospace']
-          },
-          boxShadow: {
-            greenGlow: '0 0 35px rgba(57,255,20,.35)',
-            purpleGlow: '0 0 40px rgba(124,28,255,.40)'
+    <meta name="description"
+      content="Portfolio de Jonathan Auroux Martel — systèmes, réseaux, cybersécurité et développement. Ancien technicien télécom devenu profil IT hybride." />
+
+    <meta name="author" content="Jonathan Auroux Martel">
+    <meta name="theme-color" content="#39ff14">
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jonathan Auroux Martel — Joeker Labs">
+    <meta property="og:description"
+      content="Portfolio de Jonathan Auroux Martel — systèmes, réseaux, cybersécurité et développement. Ancien technicien télécom devenu profil IT hybride.">
+    <meta property="og:image" content="https://jo0ker64.github.io/portfolio/assets/screen/portfolio_home.png">
+    <meta property="og:url" content="https://jo0ker64.github.io/portfolio/">
+    <meta property="og:site_name" content="Joeker Labs">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jonathan Auroux Martel — Joeker Labs">
+    <meta name="twitter:description"
+      content="Portfolio de Jonathan Auroux Martel — systèmes, réseaux, cybersécurité et développement. Ancien technicien télécom devenu profil IT hybride.">
+    <meta name="twitter:image" content="https://jo0ker64.github.io/portfolio/assets/screen/portfolio_home.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/icons/joeker.png">
+
+    <!-- Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              jokerGreen: '#39ff14',
+              jokerPurple: '#7c1cff',
+              jokerViolet: '#a855f7',
+              deepBlack: '#09090b',
+              softBlack: '#151515',
+              anthracite: '#2d2d2d',
+              bone: '#f8fafc',
+              muted: '#94a3b8'
+            },
+            fontFamily: {
+              dys: ['OpenDyslexic', 'Inter', 'system-ui', 'sans-serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'Consolas', 'monospace']
+            },
+            boxShadow: {
+              greenGlow: '0 0 35px rgba(57,255,20,.35)',
+              purpleGlow: '0 0 40px rgba(124,28,255,.40)'
+            }
           }
         }
       }
-    }
-  </script>
+    </script>
 
-  <link rel="stylesheet" href="./styles.css" />
-</head>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./assets/images/icons/joeker.png" />
+  </head>
 
 <body
   class="bg-bone text-slate-950 dark:bg-deepBlack dark:text-bone font-sans selection:bg-jokerGreen selection:text-deepBlack">
@@ -53,6 +84,7 @@
     <div class="absolute bottom-0 left-1/3 w-[25rem] h-[25rem] rounded-full bg-jokerViolet blur-3xl opacity-10"></div>
   </div>
 
+  <!-- Theme Toggle Button -->
   <button id="themeToggle"
     class="fixed top-5 right-5 z-50 w-16 h-9 rounded-full border border-white/15 bg-deepBlack/90 dark:bg-white/10 backdrop-blur-xl shadow-greenGlow transition">
     <span id="sunIcon"
@@ -61,6 +93,7 @@
       class="absolute right-1 top-1 grid h-7 w-7 place-items-center rounded-full bg-jokerPurple text-white opacity-0 transition">☾</span>
   </button>
 
+  <!-- Navigation Dock -->
   <nav
     class="fixed bottom-4 left-1/2 z-50 hidden -translate-x-1/2 items-center gap-3 rounded-full border border-white/10 bg-deepBlack/80 px-5 py-3 shadow-2xl backdrop-blur-xl sm:flex">
     <a class="dock-link" href="#home" aria-label="Accueil">⌂</a>
@@ -72,7 +105,9 @@
     <a class="dock-link" href="#contact" aria-label="Contact">@</a>
   </nav>
 
+  <!-- Main Content -->
   <main class="relative z-10">
+    <!--SECTION HOME-->
     <section id="home" class="min-h-screen px-5 pt-12 md:pt-20 flex items-center">
       <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.05fr_.95fr]">
         <div>
@@ -81,38 +116,32 @@
             <span class="h-2 w-2 animate-pulse rounded-full bg-jokerGreen"></span>
             Recherche alternance Bac+5 — Systèmes, Réseaux & Cyber
           </div>
-
           <div class="mb-8 rounded-[2rem] border border-jokerGreen/20 bg-deepBlack p-6 font-mono shadow-greenGlow">
             <p class="mb-3 text-jokerGreen">&gt; JOEKER_OS BOOTING...</p>
             <div id="matrixTypewriter" class="min-h-[3.5rem] text-2xl font-black tracking-widest text-bone md:text-4xl">
             </div>
             <p id="accessGranted" class="mt-4 hidden text-jokerGreen">ACCESS GRANTED</p>
           </div>
-
           <h1 class="text-5xl font-black leading-[.94] tracking-tight md:text-7xl">
             Jonathan<br />
             <span class="bg-gradient-to-r from-jokerPurple via-jokerViolet to-jokerGreen bg-clip-text text-transparent">
               Auroux Martel
             </span>
           </h1>
-
           <p class="mt-7 max-w-2xl text-xl leading-relaxed text-slate-700 dark:text-slate-300 md:text-2xl">
-          Ancien technicien télécom devenu développeur. </p>Je connecte le
+            Ancien technicien télécom devenu développeur. </p>Je connecte le
           <strong class="text-jokerPurple dark:text-jokerGreen">terrain</strong>,
           le <strong class="text-jokerPurple dark:text-jokerGreen">code</strong>
           et la <strong class="text-jokerPurple dark:text-jokerGreen">cybersécurité</strong>.
           </p>
-
           <p class="mt-4 text-lg font-black italic text-jokerPurple dark:text-jokerGreen">
             Profil atypique. Vision technique. Solutions humaines.
           </p>
-
           <div class="mt-9 flex flex-col gap-4 sm:flex-row">
             <a href="#projects" class="btn-primary">Voir mes projets</a>
             <a href="#contact" class="btn-secondary">Me contacter</a>
           </div>
         </div>
-
         <div class="relative">
           <div
             class="absolute inset-0 rounded-[3rem] bg-gradient-to-br from-jokerPurple to-jokerGreen blur-2xl opacity-25">
@@ -123,22 +152,20 @@
               <span></span><span></span><span></span>
               <p>joeker@labs:~</p>
             </div>
-
-            <pre class="mt-7 overflow-x-auto text-sm leading-relaxed md:text-base"><code><span class="text-jokerGreen">public class</span> Jonathan {
-
-  <span class="text-jokerPurple">private String[]</span> stack = {
-  <span class="text-lime-300">"Linux"</span>,
-  <span class="text-lime-300">"Network"</span>,
-  <span class="text-lime-300">"System Administration"</span>,
-  <span class="text-lime-300">"Cybersecurity"</span>,
-  <span class="text-lime-300">"Automation"</span>,
-  <span class="text-lime-300">"Java / Spring Boot / Angular"</span>
-  };
-
-  <span class="text-jokerPurple">private String</span> mindset =
-    <span class="text-lime-300">"Connect. Automate. Secure."</span>;
-}</code></pre>
-
+            <pre class="mt-7 overflow-x-auto text-sm leading-relaxed md:text-base">
+              <code>
+                <span class="text-jokerGreen">public class</span> Jonathan {
+                <span class="text-jokerPurple">private String[]</span> stack = {
+                <span class="text-lime-300">"Linux"</span>,
+                <span class="text-lime-300">"Network"</span>,
+                <span class="text-lime-300">"System Administration"</span>,
+                <span class="text-lime-300">"Cybersecurity"</span>,
+                <span class="text-lime-300">"Automation"</span>,
+                <span class="text-lime-300">"Java / Spring Boot / Angular"</span>};
+                <span class="text-jokerPurple">private String</span> mindset =
+                <span class="text-lime-300">"Connect. Automate. Secure."</span>;}
+              </code>
+            </pre>
             <div class="mt-8 rounded-3xl border border-jokerGreen/30 bg-jokerGreen/10 p-5">
               <p class="font-black text-jokerGreen">Pourquoi moi ?</p>
               <p class="mt-2 leading-relaxed text-slate-300">
@@ -151,6 +178,7 @@
       </div>
     </section>
 
+    <!--SECTION ABOUT-->
     <section id="about" class="section">
       <div class="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[.9fr_1.1fr]">
         <div>
@@ -162,35 +190,27 @@
             Façonné.
           </h2>
         </div>
-
         <div class="space-y-6 text-lg leading-relaxed text-slate-700 dark:text-slate-300">
-
           <p>
             Je n’ai pas un parcours lisse. Je n’ai pas coché toutes les cases.
             Et tu sais quoi ? Tant mieux.
           </p>
-
           <p>
             Quinze ans en cuisine m’ont appris la pression, l’organisation
             et le collectif. Six ans dans les télécoms m’ont appris les réseaux
             réels, le dépannage terrain et la relation utilisateur quand tout
             part en vrille.
           </p>
-
           <p>
             Le développement m’a donné une nouvelle arme : créer des solutions.
             Aujourd’hui, je veux aller plus loin et relier développement,
             infrastructure et cybersécurité.
           </p>
-
           <p class="text-2xl font-black text-jokerPurple dark:text-jokerGreen">
             Je veux construire. Pas juste des applis, mais des ponts entre
             les gens, les idées et les systèmes.
           </p>
-
-
           <div class="grid gap-5 md:grid-cols-2 pt-6">
-
             <article class="info-card">
               <h3>Ce que j’apporte</h3>
               <p>
@@ -198,8 +218,6 @@
                 capacité d’adaptation et envie constante d’apprendre.
               </p>
             </article>
-
-
             <article class="info-card">
               <h3>Ce que je cherche</h3>
               <p>
@@ -207,17 +225,16 @@
                 systèmes, les réseaux, l’automatisation et la cybersécurité.
               </p>
             </article>
-
           </div>
         </div>
       </div>
     </section>
 
+    <!--SECTION MISSION-->
     <section id="mission" class="section">
       <div class="mx-auto max-w-7xl px-5">
         <p class="eyebrow">Mission actuelle</p>
         <h2 class="section-title">Current quest : alternance Bac+5.</h2>
-
         <div class="mt-12 grid gap-6 md:grid-cols-3">
           <article class="info-card">
             <span class="status-dot"></span>
@@ -242,46 +259,40 @@
       </div>
     </section>
 
+    <!--SECTION PROJECTS-->
     <section id="projects" class="section">
       <div class="mx-auto max-w-7xl px-5">
         <p class="eyebrow">Project files</p>
         <h2 class="section-title">Des projets pensés pour résoudre des problèmes.<br>
           Comprendre. Concevoir. Construire.</h2>
-
         <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <!-- PROJECT 1 -->
           <article class="project-file">
-
             <div class="project-head">
               <span>PROJECT FILE #001</span>
               <strong>STATUS : ACTIVE</strong>
             </div>
-
             <h3>IdentyQuest</h3>
-
             <p class="subtitle">
               Plateforme d’accompagnement personnel & neurodivergence
             </p>
-
             <p>
               <b>Type :</b>
               Application fullstack pensée autour de l’accessibilité,
               du suivi personnel et de l’exploration de soi.
             </p>
-
             <p>
               <b>Mission :</b>
               Créer un environnement sécurisé permettant aux utilisateurs
               de suivre leur quotidien, leurs émotions, leurs rendez-vous
               et d’accéder à des ressources adaptées.
             </p>
-
             <p>
               <b>Solution :</b>
               Architecture complète avec API REST, authentification,
               gestion utilisateur, tests interactifs, journal personnel,
               annuaire et interface d’administration.
             </p>
-
             <div class="chips">
               <span>Spring Boot</span>
               <span>Angular</span>
@@ -290,7 +301,6 @@
               <span>JWT</span>
               <span>Docker</span>
             </div>
-
             <ul class="unlock-list">
               <li>Architecture 3 tiers</li>
               <li>API REST sécurisée</li>
@@ -298,57 +308,44 @@
               <li>Expérience utilisateur accessible</li>
             </ul>
             <div class="project-actions">
-
-              <a href="#" class="project-btn">
+              <a href="./assets/images/screen/identyquest.png" class="project-btn" target="_blank"
+                rel="noopener noreferrer">
                 Aperçu
               </a>
-
-              <a href="#" class="project-btn">
+              <a href="./assets/docs/Identyquest.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Dossier projet
               </a>
-
               <button class="project-btn locked" onclick="openAccessModal('IdentyQuest')">
                 Code sur demande
               </button>
-
             </div>
           </article>
 
+          <!-- PROJECT 2 -->
           <article class="project-file">
-
             <div class="project-head">
-              <span>PROJECT FILE #005</span>
+              <span>PROJECT FILE #002</span>
               <strong>STATUS : TEAM PROJECT</strong>
             </div>
-
             <h3>Book Hub</h3>
-
             <p class="subtitle">
               Application fullstack de gestion et partage autour des livres
             </p>
-
-
             <p>
               <b>Type :</b>
               Projet collaboratif fullstack réalisé durant ma formation CDA.
             </p>
-
-
             <p>
               <b>Mission :</b>
               Concevoir une application complète permettant la gestion
               d’une bibliothèque numérique avec une architecture moderne
               front-end / back-end.
             </p>
-
-
             <p>
               <b>Solution :</b>
               Développement en équipe avec séparation des responsabilités,
               API REST, base relationnelle et interface utilisateur dynamique.
             </p>
-
-
             <div class="chips">
               <span>Spring Boot</span>
               <span>Angular</span>
@@ -356,68 +353,54 @@
               <span>API REST</span>
               <span>Git</span>
             </div>
-
-
             <ul class="unlock-list">
               <li>Travail collaboratif</li>
               <li>Gestion Git en équipe</li>
               <li>Architecture fullstack</li>
               <li>Intégration front/back</li>
             </ul>
-
-
             <div class="project-actions">
-
-              <a href="#" class="project-btn">
+              <a href="./assets/images/screen/bookhub.png" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Aperçu
               </a>
-
-              <a href="#" class="project-btn">
+              <a href="./assets/docs/BookHub.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Dossier projet
               </a>
-
               <a href="https://github.com/Jo0ker64/BookHub-Projet-FullStack-CDA-ENI" class="project-btn public"
                 target="_blank">
                 Voir le code
               </a>
-
             </div>
-
           </article>
 
+          <!-- PROJECT 3 -->
           <article class="project-file">
 
             <div class="project-head">
               <span>PROJECT FILE #003</span>
               <strong>STATUS : PERSONAL PROJECT</strong>
             </div>
-
-            <h3>LaFolibrick</h3>
-
+            <h3>L'aFolibrick</h3>
             <p class="subtitle">
               Application fullstack de gestion de collection LEGO
             </p>
-
             <p>
               <b>Type :</b>
               Projet personnel développé autour d’une passion,
               avec une approche application métier.
             </p>
-
             <p>
               <b>Mission :</b>
               Concevoir un outil permettant aux collectionneurs LEGO
               de gérer leurs sets, suivre leur collection et centraliser
               les informations importantes.
             </p>
-
             <p>
               <b>Solution :</b>
               Création d’une architecture fullstack séparée :
               API REST Spring Boot, interface Angular et persistance
               des données dans une base relationnelle.
             </p>
-
             <div class="chips">
               <span>Spring Boot</span>
               <span>Angular</span>
@@ -425,72 +408,53 @@
               <span>REST API</span>
               <span>JPA</span>
             </div>
-
             <ul class="unlock-list">
               <li>Analyse d’un besoin utilisateur réel</li>
               <li>Modélisation de données métier</li>
               <li>Relations JPA/Hibernate</li>
               <li>Communication front Angular ↔ API</li>
             </ul>
-
-
             <div class="project-actions">
-
-              <a href="#" class="project-btn">
+              <a href="./assets/images/screen/lafolibrick.png" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Aperçu
               </a>
-
-              <a href="#" class="project-btn">
+              <a href="./assets/docs/LaFolibrick.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Dossier projet
               </a>
-
               <button class="project-btn locked" onclick="openAccessModal('LaFolibrick')">
                 Code sur demande
               </button>
-
             </div>
-
           </article>
 
+          <!-- PROJECT 4 -->
           <article class="project-file">
 
             <div class="project-head">
               <span>PROJECT FILE #004</span>
               <strong>STATUS : CDA PROJECT</strong>
             </div>
-
-
             <h3>Bibli’o</h3>
-
-
             <p class="subtitle">
               Application métier de gestion de bibliothèque
             </p>
-
-
             <p>
               <b>Type :</b>
               Projet professionnel réalisé dans le cadre du titre
               Concepteur Développeur d’Applications (CDA - RNCP niveau 6).
             </p>
-
-
             <p>
               <b>Mission :</b>
               Concevoir une solution permettant la gestion complète
               d’une bibliothèque : catalogue de livres, lecteurs,
               emprunts, retours et suivi des disponibilités.
             </p>
-
-
             <p>
               <b>Solution :</b>
               Développement d’une application desktop structurée avec
               une architecture MVC, une séparation des responsabilités,
               une base embarquée et une couverture par tests unitaires.
             </p>
-
-
             <div class="chips">
               <span>Java 21</span>
               <span>Swing</span>
@@ -499,76 +463,52 @@
               <span>JUnit</span>
               <span>MVC</span>
             </div>
-
-
             <ul class="unlock-list">
-
               <li>Analyse du besoin utilisateur</li>
-
               <li>Conception UML & modélisation</li>
-
               <li>Programmation orientée objet</li>
-
               <li>Architecture MVC</li>
-
               <li>Tests unitaires et qualité logicielle</li>
-
             </ul>
-
-
             <div class="project-actions">
-
-              <a href="#" class="project-btn">
+              <a href="./assets/images/screen/biblio.png" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Aperçu
               </a>
-
-
-              <a href="#" class="project-btn">
+              <a href="./assets/docs/Biblio.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Dossier projet
               </a>
-
-
-              <a href="LIEN_GITHUB_BIBLIO" class="project-btn public" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Jo0ker64/biblio" class="project-btn public" target="_blank" rel="noopener noreferrer">
                 Voir le code
               </a>
-
             </div>
-
-
           </article>
 
+          <!-- PROJECT 5 -->
           <article class="project-file">
-
             <div class="project-head">
               <span>PROJECT FILE #005</span>
               <strong>STATUS : CLIENT PROJECT</strong>
             </div>
-
             <h3>LM Le Mées</h3>
-
             <p class="subtitle">
               Site vitrine & interface d’administration pour une boulangerie
             </p>
-
             <p>
               <b>Type :</b>
               Projet réalisé en entreprise durant mon stage
               Développeur Web & Web Mobile (DWWM).
             </p>
-
             <p>
               <b>Mission :</b>
               Concevoir une solution web permettant à l’établissement
               de présenter son activité, ses produits et gérer son contenu
               de manière autonome.
             </p>
-
             <p>
               <b>Solution :</b>
               Développement d’un site dynamique avec espace administrateur,
               gestion des contenus, formulaires et persistance des données.
             </p>
-
             <div class="chips">
               <span>Symfony 7</span>
               <span>PHP</span>
@@ -576,78 +516,53 @@
               <span>MySQL</span>
               <span>Bootstrap</span>
             </div>
-
             <ul class="unlock-list">
-
               <li>Analyse d’un besoin client réel</li>
-
               <li>Développement MVC avec Symfony</li>
-
               <li>Gestion d’un back-office</li>
-
               <li>Autonomie sur un projet complet</li>
-
               <li>Livraison dans un contexte professionnel</li>
-
             </ul>
-
             <div class="project-actions">
-
-              <a href="#" class="project-btn">
+              <a href="./assets/images/screen/LM_full.png" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Aperçu
               </a>
-
-              <a href="#" class="project-btn">
+              <a href="./assets/docs/LM.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Dossier projet
               </a>
-
               <button class="project-btn confidential" onclick="openConfidentialModal('LM Le Mées')">
                 Code confidentiel
               </button>
-
             </div>
-
-
           </article>
 
+          <!-- PROJECT 6 -->
           <article class="project-file">
-
             <div class="project-head">
               <span>PROJECT FILE #006</span>
               <strong>STATUS : DWWM PROJECT</strong>
             </div>
-
-
             <h3>GeekUniverse</h3>
-
-
             <p class="subtitle">
               Application web de gestion autour de l’univers geek
             </p>
-
-
             <p>
               <b>Type :</b>
               Projet réalisé pour la soutenance du titre professionnel
               Développeur Web & Web Mobile (DWWM - RNCP niveau 5).
             </p>
-
-
             <p>
               <b>Mission :</b>
               Concevoir une application web complète permettant la gestion
               d’un catalogue, d’utilisateurs et de contenus via une interface
               dynamique.
             </p>
-
-
             <p>
               <b>Solution :</b>
               Développement d’une application MVC avec Symfony,
               intégrant une base de données relationnelle, des formulaires,
               une interface administrateur et une séparation claire des responsabilités.
             </p>
-
             <div class="chips">
               <span>Symfony</span>
               <span>PHP</span>
@@ -656,73 +571,53 @@
               <span>MVC</span>
               <span>Bootstrap</span>
             </div>
-
             <ul class="unlock-list">
-
               <li>Première application web complète</li>
-
               <li>Architecture MVC</li>
-
               <li>Gestion des entités et relations</li>
-
               <li>Création d’un espace administrateur</li>
-
               <li>Préparation et présentation d’une soutenance technique</li>
-
             </ul>
-
             <div class="project-actions">
-
-              <a href="#" class="project-btn">
+              <a href="./assets/images/screen/GeekUniverse.png" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Aperçu
               </a>
-
-
-              <a href="#" class="project-btn">
+              <a href="./assets/docs/GeekUniverse.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Dossier projet
               </a>
-
               <button class="project-btn locked" onclick="openAccessModal('GeekUniverse')">
                 Code sur demande
               </button>
-
             </div>
-
           </article>
 
+          <!--Projet 7 -->
           <article class="project-file">
-
             <div class="project-head">
               <span>PROJECT FILE #007</span>
               <strong>STATUS : CLIENT PROJECT</strong>
             </div>
-
             <h3>Pourr’i Gâté</h3>
-
             <p class="subtitle">
               Site vitrine one-page avec prise de rendez-vous en ligne
             </p>
-
             <p>
               <b>Type :</b>
               Projet client réalisé durant mon stage CDA AFPA pour une activité
               de création couture.
             </p>
-
             <p>
               <b>Mission :</b>
               Concevoir un site vitrine permettant de présenter l’activité,
               les créations, les services proposés et faciliter la prise de
               rendez-vous en ligne.
             </p>
-
             <p>
               <b>Solution :</b>
               Développement d’un site one-page avec Spring Boot, formulaire de
               contact / rendez-vous et structure pensée pour une future mise en ligne.
               Le projet n’a pas été publié faute de financement côté client.
             </p>
-
             <div class="chips">
               <span>Spring Boot</span>
               <span>Java</span>
@@ -730,7 +625,6 @@
               <span>Thymeleaf</span>
               <span>Formulaire RDV</span>
             </div>
-
             <ul class="unlock-list">
               <li>Analyse d’un besoin client réel</li>
               <li>Développement d’un site vitrine professionnel</li>
@@ -738,64 +632,46 @@
               <li>Adaptation aux contraintes client</li>
               <li>Projet prêt pour une mise en ligne future</li>
             </ul>
-
             <div class="project-actions">
-
-              <a href="#" class="project-btn">
+              <a href="./assets/images/screen/Pourri_gate.png" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Aperçu
               </a>
-
-              <a href="#" class="project-btn">
+              <a href="./assets/docs/Pourri_gate.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Dossier projet
               </a>
-
               <button class="project-btn confidential" onclick="openConfidentialModal('Pourr’i Gâté')">
                 Code confidentiel
               </button>
-
             </div>
-
           </article>
 
+          <!-- Projet 8 -->
           <article class="project-file">
-
             <div class="project-head">
               <span>PROJECT FILE #008</span>
               <strong>STATUS : FIRST PROJECT</strong>
             </div>
-
-
             <h3>GeekOTek</h3>
-
-
             <p class="subtitle">
               Timeline statique des univers Marvel & DC
             </p>
-
-
             <p>
               <b>Type :</b>
               Premier projet web réalisé durant ma formation
               Développeur Web & Web Mobile (DWWM).
             </p>
-
-
             <p>
               <b>Mission :</b>
               Concevoir une page permettant de présenter et organiser
               les œuvres Marvel et DC sous forme de timeline afin de
               faciliter la lecture des différents univers.
             </p>
-
-
             <p>
               <b>Solution :</b>
               Création d’une interface statique en HTML5/CSS3 avec
               une attention particulière portée à la structure,
               au responsive design et à l’expérience utilisateur.
             </p>
-
-
             <div class="chips">
               <span>HTML5</span>
               <span>CSS3</span>
@@ -803,50 +679,38 @@
               <span>UI</span>
               <span>Intégration Web</span>
             </div>
-
-
             <ul class="unlock-list">
-
               <li>Premiers pas en développement web</li>
-
               <li>Structuration HTML sémantique</li>
-
               <li>Mise en page et design responsive</li>
-
               <li>Transformation d’une passion en projet concret</li>
-
             </ul>
-
             <div class="project-actions">
-
-              <a href="#" class="project-btn">
+              <a href="./assets/images/screen/geekotek.png" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Aperçu
               </a>
-
-              <a href="#" class="project-btn">
+              <a href="./assets/docs/GeekOTek.pdf" class="project-btn" target="_blank" rel="noopener noreferrer">
                 Dossier projet
               </a>
-
               <a href="https://github.com/Jo0ker64/GeekOtek" class="project-btn public" target="_blank"
                 rel="noopener noreferrer">
                 Voir le code
               </a>
-
             </div>
-
           </article>
         </div>
       </div>
     </section>
 
+    <!--SECTION SKILLS-->
     <section id="skills" class="section">
+      <!-- Compétences -->
       <div class="mx-auto max-w-7xl px-5">
         <p class="eyebrow">Compétences</p>
         <h2 class="section-title">
           Pas une pile de technos.<br>
           Une boîte à outils.
         </h2>
-
         <div class="mt-12 grid gap-6 lg:grid-cols-4">
           <div class="skill-card">
             <h3>Systems & Network</h3>
@@ -882,7 +746,7 @@
               Documentation.</p>
           </div>
         </div>
-
+        <!-- CTF Practice -->
         <div class="ctf-card">
           <div>
             <p class="eyebrow">Cyber practice</p>
@@ -892,13 +756,12 @@
               en sécurité web, logique d’exploitation, réseau, Linux et analyse.
             </p>
           </div>
-
           <a href="https://www.root-me.org/jo3k3r64?lang=fr" target="_blank" rel="noopener noreferrer"
             class="btn-primary">
             Voir mon profil Root-Me
           </a>
         </div>
-
+        <!-- Radars de compétences -->
         <div class="mt-10 grid gap-6 lg:grid-cols-2">
           <div class="chart-card">
             <h3>Architecture IT</h3>
@@ -918,30 +781,21 @@
           </div>
         </div>
       </div>
-
     </section>
 
-
+    <!--SECTION TIMELINE-->
     <section id="timeline" class="section">
+      <!-- Parcours -->
       <div class="mx-auto max-w-6xl px-5">
-
         <p class="eyebrow">Parcours</p>
-
         <h2 class="section-title">
           Plusieurs chemins.<br>
           Une même direction.
         </h2>
-
-
         <div class="dual-timeline">
-
-
           <!-- EXPERIENCE -->
           <div class="timeline-track xp">
-
             <h3>Expérience</h3>
-
-
             <div class="timeline-item">
               <span>1998 — 2014</span>
               <h4>Cuisine & management</h4>
@@ -950,8 +804,6 @@
                 gestion opérationnelle.
               </p>
             </div>
-
-
             <div class="timeline-item">
               <span>2015 — 2021</span>
               <h4>Technicien télécom</h4>
@@ -960,8 +812,6 @@
                 diagnostic et relation utilisateur.
               </p>
             </div>
-
-
             <div class="timeline-item">
               <span>2026+</span>
               <h4>Objectif IT & Cyber</h4>
@@ -970,18 +820,10 @@
                 cybersécurité.
               </p>
             </div>
-
-
           </div>
-
-
-
           <!-- FORMATION -->
           <div class="timeline-track formation">
-
             <h3>Formation</h3>
-
-
             <div class="timeline-item">
               <span>2007</span>
               <h4>TAI</h4>
@@ -990,8 +832,6 @@
                 maintenance, systèmes.
               </p>
             </div>
-
-
             <div class="timeline-item">
               <span>2011 — 2014</span>
               <h4>BTS Sciences Numériques</h4>
@@ -1000,8 +840,6 @@
                 systèmes connectés.
               </p>
             </div>
-
-
             <div class="timeline-item">
               <span>2024</span>
               <h4>DWWM</h4>
@@ -1010,8 +848,6 @@
                 Symfony, bases de données.
               </p>
             </div>
-
-
             <div class="timeline-item">
               <span>2025 — 2026</span>
               <h4>CDA</h4>
@@ -1020,16 +856,12 @@
                 Angular, architecture, conception.
               </p>
             </div>
-
-
           </div>
-
-
         </div>
       </div>
-
     </section>
 
+    <!--SECTION CONTACT-->
     <section id="contact" class="section pb-32">
       <div class="mx-auto max-w-5xl px-5 text-center">
         <p class="eyebrow">Contact</p>
@@ -1043,12 +875,17 @@
           <a class="btn-primary" href="mailto:martel.jonathan64@gmail.com">martel.jonathan64@gmail.com</a>
           <a class="btn-secondary" href="https://github.com/Jo0ker64" target="_blank"
             rel="noopener noreferrer">GitHub</a>
-          <a class="btn-secondary" href="https://www.linkedin.com/in/jo3k3r/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn-secondary" href="https://www.linkedin.com/in/jo3k3r/" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn-secondary" href="https://codepen.io/jo3k3r" target="_blank" rel="noopener noreferrer">
+            CodePen
+          </a>
         </div>
       </div>
     </section>
   </main>
 
+  <!--FOOTER-->
   <footer class="relative z-10 border-t border-slate-200 py-8 pb-32 dark:border-white/10">
     <div
       class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 text-sm text-slate-500 dark:text-slate-400 md:flex-row">
@@ -1104,40 +941,29 @@
           Un accès ou une présentation du code peut être fourni
           dans le cadre d’un échange technique.
         </p>
-
       </div>
 
       <div class="modal-actions">
-
         <a id="requestAccessBtn" class="access-btn" href="mailto:martel.jonathan64@gmail.com">
           📩 Demander l'accès au code
         </a>
-
       </div>
-
     </div>
-
   </div>
 
-
   <div id="confidentialModal" class="modal hidden">
-
     <div class="modal-content confidential-content">
-
       <button onclick="closeConfidentialModal()" class="modal-close">
         ✕
       </button>
 
-
       <p class="terminal-title">
-        CLIENT PROJECT 🔒
+        CLIENT PROJECT
       </p>
-
 
       <h3 id="confidentialProject">
         PROJECT FILE
       </h3>
-
 
       <div class="terminal-lines">
 
@@ -1151,16 +977,13 @@
 
         <br>
 
-
         <p>
           Ce projet a été réalisé dans un contexte professionnel.
         </p>
 
-
         <p>
           Le code source n'est pas diffusé afin de respecter :
         </p>
-
 
         <ul>
 
@@ -1172,20 +995,14 @@
 
         </ul>
 
-
         <br>
-
 
         <p>
           Une présentation technique, des captures ou une démonstration
           peuvent être proposées lors d’un échange professionnel.
         </p>
-
-
       </div>
-
     </div>
-
   </div>
 </body>
 
